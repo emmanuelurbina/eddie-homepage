@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eddie Home</title>
+    <!-- Montserrato A. font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- styles-->
+    <link rel="stylesheet" href="./public/css/main.css">
+</head>
+
+<body>
+    <div class="nav-content">
+        <nav class="navbar">
+            <div class="nav-title">
+                <h1> <strong>Eddie</strong></h1>
+            </div>
+            <div class="icon-menu">
+                <a href="#" onclick="responsive()" id="button-menu">
+                    <i class="material-icons icon">menu</i>
+                </a>
+            </div>
+            <div class="menu" id="menu">
+
+                <li class="item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="item">
+                    <a href="#">Services</a>
+                </li>
+                <li class="item">
+                    <a href="#">Our Works</a>
+                </li>
+                <li class="item">
+                    <a href="#">Clients</a>
+                </li>
+                <li class="item">
+                    <a href="#">Contact</a>
+                </li>
+            </div>
+
+        </nav>
+    </div>
+
+    <script>
+        function responsive() {
+
+            var menu = document.getElementById("menu")
+            if (menu.className == 'menu') {
+                menu.className += " responsive"
+            } else {
+                menu.className = "menu"
+            }
+        }
+    </script>
+</body>
+
+</html>
