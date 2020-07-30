@@ -4,7 +4,13 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 1em;
+    padding: 1em;
+    z-index: 0;
+}
 /*navbar*/
 .nav-content {
     position: fixed;
@@ -82,17 +88,52 @@
 /*services*/
 .services {
     display: grid;
-    margin: 2em 1em;
-    padding: 1em;
+    padding: 2em 3em;
     grid-template-columns: repeat(3, auto);
     justify-content: space-around;
 }
-.services i {
+.card {
+    padding: 3em 2em;
+    border-radius: 25px;
+
+}
+.card:hover {
+    -webkit-box-shadow: 9px 3px 26px 12px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 9px 3px 26px 12px rgba(0, 0, 0, 0.16);
+    box-shadow: 9px 3px 26px 12px rgba(0, 0, 0, 0.16);
+}
+.card-body {
+    margin-top: 3em;
+
+    text-align: justify;
+}
+.card:hover .btn {
+    outline: none;
+    background-color: #6CBAE6;
+    color: #fff;
+}
+.card:hover .btn:hover {
+    background-color: #12a8fc;
+    color: #fff;
+}
+.card:hover .btn:active {
+    background-color: #009df5;
+    color: #fff;
+}
+.services .card .card-header i {
     padding: 1em;
     border-radius: 15px;
 }
 .design {
     background-color: #6CBAE6;
+    color: #fff;
+}
+.front-end {
+    background-color: #68C690;
+    color: #fff;
+}
+.back-end {
+    background-color: #F18A8A;
     color: #fff;
 }
 /*end services*/
@@ -112,6 +153,7 @@
     padding: 1em;
     border-radius: 15px;
     font-weight: bolder;
+
 }
 .contact-form .form-group .control:focus {
     outline: none;
@@ -119,6 +161,8 @@
 .contact-form .form-group .btn {
     outline: none;
     position: absolute;
+}
+.btn {
     right: 1px;
     padding: 1em 2em;
     border: none;
@@ -137,7 +181,7 @@
 }
 /*end form*/
 /*responsive*/
-@media screen and (max-width: 600px)  {
+@media screen and (max-width: 800px)  {
     .icon-menu {
         display: block;
     }
@@ -147,9 +191,14 @@
     .contact-form {
         width: 100%;
     }
+    .services {
+        grid-template-columns: auto;
+        justify-content: center;
+        padding: 0;
+    }
 }
 
-@media screen and (max-width: 600px)  {
+@media screen and (max-width: 800px)  {
 
     .menu.responsive{
         display: block;
