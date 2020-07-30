@@ -20,9 +20,9 @@
                 <h1> <strong>Edie</strong></h1>
             </div>
             <div class="icon-menu">
-                <a href="#" onclick="responsive()" id="button-menu">
+                <span onclick="responsive()" id="button-menu">
                     <i class="material-icons icon">menu</i>
-                </a>
+                </span>
             </div>
             <div class="menu" id="menu">
 
@@ -30,7 +30,7 @@
                     <a href="#" onclick="responsive()">Home</a>
                 </li>
                 <li class="item">
-                    <a href="#" onclick="responsive()">Services</a>
+                    <a href="#services" onclick="responsive()">Services</a>
                 </li>
                 <li class="item">
                     <a href="#" onclick="responsive()">Our Works</a>
@@ -77,23 +77,69 @@
             </form>
         </article>
     </section>
-    <section class="services">
-        <article class="card">
-            <div class="card-header">
-                <i class="material-icons design">edit</i>
-            </div>
-        </article>
-        <article class="card">
-            <div class="card-header">
-                <i class="material-icons">code</i>
-            </div>
-        </article>
-        <article class="card">
-            <div class="card-header">
-                <i class="material-icons">storage</i>
-            </div>
-        </article>
-    </section>
+    <main class="container">
+        <h1>We offer high demand <br> services</h1>
+        <section class="services" id="services">
+            <article class="card">
+                <div class="card-header">
+                    <i class="material-icons design">edit</i>
+                </div>
+                <div class="card-body">
+                    <h1>UI/UX Design</h1>
+                    <br>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, suscipit necessitatibus?
+                        Incidunt
+                        cumque facere explicabo magnam nostrum maxime a perspiciatis, ipsam debitis totam, quis aliquam.
+                        Officiis tempore error quasi voluptatem?
+                    </p>
+                    <br><br>
+                    <p>
+                        <button type="button" class="btn ">Get started</button>
+                    </p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-header">
+                    <i class="material-icons front-end">code</i>
+                </div>
+                <div class="card-body">
+                    <h1>Front End</h1>
+                    <br>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, suscipit necessitatibus?
+                        Incidunt
+                        cumque facere explicabo magnam nostrum maxime a perspiciatis, ipsam debitis totam, quis aliquam.
+                        Officiis tempore error quasi voluptatem?
+                    </p>
+                    <br><br>
+                    <p>
+                        <button type="button" class="btn ">Get started</button>
+                    </p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-header">
+                    <i class="material-icons back-end">storage</i>
+                </div>
+                <div class="card-body">
+                    <h1>Back End</h1>
+                    <br>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, suscipit necessitatibus?
+                        Incidunt
+                        cumque facere explicabo magnam nostrum maxime a perspiciatis, ipsam debitis totam, quis aliquam.
+                        Officiis tempore error quasi voluptatem?
+                    </p>
+                    <br><br>
+                    <p>
+                        <button type="button" class="btn ">Get started</button>
+                    </p>
+                </div>
+            </article>
+        </section>
+
+    </main>
     <script>
         function responsive() {
 
