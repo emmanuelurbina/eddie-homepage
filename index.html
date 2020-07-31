@@ -3,12 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Responsive Template">
+    <meta name="keywords" content="HTML, CSS, Responsive">
+    <meta name="author" content="Emmanuel Lucio Urbina">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edie Home</title>
     <!-- Montserrato A. font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <!-- icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d448299394.js" crossorigin="anonymous"></script>
     <!-- styles-->
     <link rel="stylesheet" href="./public/css/main.css">
 </head>
@@ -39,7 +43,7 @@
                     <a href="#clients" onclick="responsive()">Clients</a>
                 </li>
                 <li class="item">
-                    <a href="#" onclick="responsive()">Contact</a>
+                    <a href="#contact" onclick="responsive()">Contact</a>
                 </li>
             </div>
 
@@ -228,18 +232,59 @@
             </article>
         </section>
     </main>
+    <footer class="footer" id="contact">
+        <div class="contact-menu-footer">
+            <ul class="footer-nav">
+                <li class="item-f">
+                    <a href="#" onclick="responsive()">Home</a>
+                </li>
+                <li class="item-f">
+                    <a href="#services" onclick="responsive()">Services</a>
+                </li>
+                <li class="item-f">
+                    <a href="#works" onclick="responsive()">Our Works</a>
+                </li>
+                <li class="item-f">
+                    <a href="#clients" onclick="responsive()">Clients</a>
+                </li>
+                <li class="item-f">
+                    <a href="#contact" onclick="responsive()">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social-network">
+            <h1>Edie</h1>
+            <br>
+            <ul class="social-items">
+                <li class="social-item">
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
 
-    <script>
-        function responsive() {
+                </li>
+                <li class="social-item">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
 
-            var menu = document.getElementById("menu")
-            if (menu.className == 'menu') {
-                menu.className += " responsive"
-            } else {
-                menu.className = "menu"
-            }
-        }
-    </script>
+                </li>
+                <li class="social-item">
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="form-contact">
+            <form action="#" class="frm-contact">
+                <strong><label>Want us to contact you?</label></strong>
+                <div class="frm-group">
+                    <input class="control" type="email" placeholder="Email">
+                    <button type="button" class="btn primary">Join</button>
+                </div>
+            </form>
+        </div>
+    </footer>
+    <section class="footer-author">
+        <p class="author">
+            Emmanuel Lucio Urbina <a href="https://devchallenges.io">@ devchallenges.io</a>
+        </p>
+    </section>
+    <script src="./public/js/main.js"></script>
 </body>
 
 </html>

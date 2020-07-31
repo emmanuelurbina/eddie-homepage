@@ -285,6 +285,68 @@
 .muted-p {
     color: gray;
 }
+
+/*footer*/
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 1em;
+    color: honeydew;
+    justify-content: space-around;
+    background-color: #020202;
+}
+.footer-nav {
+    list-style: none;
+    padding: 0;
+}
+.item-f {
+    margin: 15px 0;
+}
+.item-f a, .social-item a {
+    text-decoration: none;
+    color: #fff;
+}
+.item-f a::hover, .social-item a {
+    color: lightgray;
+}
+.social-items {
+    display: block;
+}
+.social-item  {
+    display: inline-block;
+    margin-right: 15px;
+}
+.social-item a {
+    font-size: 36px;
+}
+.frm-contact {
+    width: 100%;
+}
+.frm-group .control{
+
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 1em;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+}
+.frm-group {
+    position: relative;
+    padding: 15px 0;
+}
+.frm-contact label {
+    font-size: 14px;
+}
+.frm-group button {
+    position: absolute;
+}
+/*Change curos when focus a and buttons*/
+.a, button {
+    outline: none;
+    cursor: pointer;
+}
+
 /*responsive*/
 @media screen and (max-width: 600px)  {
     .work-detail .work-card .see-more {
@@ -341,6 +403,20 @@
         padding-top: .1em;
 
     }
+    .footer {
+        padding: 1em 2em;
+        grid-template-columns: auto;
+        justify-content: unset;
+    }
+    .social-network {
+        margin: 2em 0;
+    }
+    .frm-contact label{
+        font-size: 12px;
+    }
+    .footer-author p{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 600px)  {
@@ -353,4 +429,22 @@
         display: block;
         margin-top: 1em;
     }
+}
+
+
+.footer-author {
+    background-color: #010101;
+    color: white;
+    text-align: center;
+
+}
+.footer-author p{
+    padding: 1em 2em;
+}
+.footer-author p a{
+    text-decoration: none;
+    color: white;
+}
+.footer-author p a:hover{
+    color: #f2f2f2;
 }
