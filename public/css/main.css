@@ -255,6 +255,36 @@
     columns: grey;
 }
 /*end works*/
+.clients {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+}
+.texto, .client {
+    width: 70%;
+}
+
+.texto p {
+    font-size: 36px;
+    text-align: justify;
+}
+.client-card {
+    margin-top: 2em;
+    position: relative;
+}
+.picture-card {
+    width: 10%;
+    float: left;
+}
+.client-data {
+    padding-top: 1em;
+    margin-left: 1em;
+    float: left;
+}
+.muted-p {
+    color: gray;
+}
 /*responsive*/
 @media screen and (max-width: 600px)  {
     .work-detail .work-card .see-more {
@@ -296,7 +326,21 @@
     .team-description {
         padding: 0;
     }
+    .texto, .client {
+        width: 100%;
+    }
+    .texto p {
+        font-size: 22px;
+        text-align: justify;
+    }
+    .picture-card {
+        width: 25%;
+        float: left;
+    }
+    .client-data {
+        padding-top: .1em;
 
+    }
 }
 
 @media screen and (max-width: 600px)  {
